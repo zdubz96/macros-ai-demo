@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-
-
+  get("/blank_form", { :controller => "macros", :action => "display_form" })
+  post("/process_inputs",{:controller=>"macros",:action=> "calculate"})
   # Solutions below. Don't peek until you try it yourself and get stuck!
 
   get("/solutions/blank_form", { :controller => "solutions", :action => "display_form" })

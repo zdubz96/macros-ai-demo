@@ -1,0 +1,17 @@
+<h1>Estimate macros</h1>
+
+<p>
+Send image and get macros
+</p>
+
+<form action="/process_inputs" method="post" enctype="multipart/form-data">
+  <label for="image">Image:</label>
+  <input type="file" id="image" name="image">
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+  </div>
+  <p>
+    <button type="submit">Calculate!</button>
+  </p>
+</form>
